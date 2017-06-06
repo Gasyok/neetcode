@@ -9,20 +9,19 @@ class Solution:
         return 2 + self.num(n - 1)
 
     def generateParenthesis(self, n: int) -> List[str]:
-
         def helper(opened, closed, string):
             if len(string) == n * 2:
                 ans.append(string)
                 return
 
             if opened < n:
-                helper(opened + 1, closed, string + '(')
+                helper(opened + 1, closed, string + "(")
 
             if closed < opened:
-                helper(opened, closed + 1, string + ')')
+                helper(opened, closed + 1, string + ")")
 
         ans = []
-        helper(0, 0, '')
+        helper(0, 0, "")
         return ans
 
 
