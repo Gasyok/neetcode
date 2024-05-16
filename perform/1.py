@@ -19,8 +19,23 @@ class Store:
         return random.choice(list(self.val))
 
 
+def test(object=None):
+    return {
+        "hello": {
+            "test": 14,
+            "lol": 14,
+        },
+        "l": {
+            "3": 1,
+        },
+    }
+
+
+print(test())
+
+
 s = Store()
-s.add(val=2)
-s.add(val=3)
+s.add(val=4)
 s.add(val=5)
+s.add(val=7)
 print(s.get_random())
