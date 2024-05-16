@@ -1,8 +1,9 @@
 import random
+from typing import List
+import numpy
 
 
 class Store:
-
     def __init__(self, val=None):
         self.val = set()
         if val:
