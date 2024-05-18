@@ -11,8 +11,8 @@ class Solution:
             if nums[mid] == target:
                 return mid
             is_transition = nums[right] < nums[left]
-            is_left = (target >= nums[left])
-            is_start_left = (nums[mid] < nums[left])
+            is_left = target >= nums[left]
+            is_start_left = nums[mid] < nums[left]
 
             if is_transition and is_left and is_start_left:
                 right = mid - 1
@@ -26,7 +26,7 @@ class Solution:
         return -1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Solution().search([4, 5, 6, 7, 0, 1, 2], 0))  # 4
     print(Solution().search([4, 5, 6, 7, 0, 1, 2], 3))  # -1
     print(Solution().search([1], 0))  # -1
