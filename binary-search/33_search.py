@@ -1,6 +1,8 @@
 from typing import List
 
 
+# prikol 1
+# TODO: MAKE THIS WORK!
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
         sz = len(nums)
