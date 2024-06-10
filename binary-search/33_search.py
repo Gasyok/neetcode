@@ -2,6 +2,8 @@ from typing import List
 
 
 # prikol 1
+# JFPDSJPIOFDSJIOPF
+# fPJDFJDSIOPFJIODSF
 # TODO: MAKE THIS WORK!
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
